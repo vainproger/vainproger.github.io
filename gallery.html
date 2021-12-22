@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="description" content="Онлайн магазин редких и коллекционных предметов.">
+  <title>VRC Shop</title>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="scripts/speedInfo.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <script type="module">
+    import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+  
+    let swiper = new Swiper('.swiper', {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    })
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;600&family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body link=#0a0a0a alink=#1b1116 vlink=#1b1116>
+  <header class="header">
+    <div class="login">
+      <p>Log In</p>
+    </div>
+    <div class="register">
+      <p>Register</p>
+    </div>
+    <h1 class="vrc"><a href="index.html">VRC SHOP</a></h1>
+    <h2>
+      <p class="leftstr"><a class="nav" href="collectionsPage.html">collections</a></p>
+      <p class="rightstr"><a class="nav" href="singleproductsPage.html">single products</a></p>
+    </h2>
+  </header>
+  <main class="main">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="width: 271.25px; margin-right: 30px;">
+            Slide 1
+        </div>
+        <div class="swiper-slide" style="width: 271.25px; margin-right: 30px;">
+            Slide 2
+        </div>
+        <div slide="swiper-slide" style="width: 271.25px; margin-right: 30px;">
+            Slide 3  
+        </div>
+        <div slide="swiper-slide" style="width: 271.25px; margin-right: 30px;" >
+            Slide 4
+        </div>
+        <div slide="swiper-slide" style="width: 271.25px; margin-right: 30px;">
+            Slide 5
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="about">
+      <ul>
+        <div class="list">
+          <li class="firstLine">Contact us</li>
+          <li class="secondLine">Support</li>
+          <li class="thirdLine"><a href="community.html">Community</a></li>
+          <li class="fourthLine"><a href="taskList.html">Task List</a></li>
+        </div>
+      </ul>
+      <p id="speed">Page loading time: </p>
+    </div>
+  </footer>
+</body>
+</html>
